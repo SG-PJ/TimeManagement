@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TimeManagement</string>
+    <string name="btnHome">ホーム</string>
+    <string name="btnToDay">本日</string>
+    <string name="btnCalendar">カレンダー</string>
+    <string name="btnSetUp">設定</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnSignUp">signUp</string>
+    <string name="butSubmit">送信</string>
+    <string name="butCancel">キャンセル</string>
+    <string name="dispLogin">login</string>
+    <string name="dispToDay">本日画面</string>
+    <string name="dispHome">ホーム画面</string>
+    <string name="dispCalendar">カレンダー画面</string>
+    <string name="dispSetup">設定画面</string>
+    <string name="dispInfo">勤怠情報</string>
+    <string name="dispStartTime">出社時刻  ：</string>
+    <string name="dispEndTime">退社時刻  ：</string>
+    <string name="dispWorkTime">作業時間（所定内）：</string>
+    <string name="dispOverTime">（時間外）：</string>
+    <string name="dispWorkTimeHoliday">作業時間（休日）：</string>
+    <string name="dispWorkTimeMidnight">深夜時間（内役）：</string>
+    <string name="dispWorkTimeTotal">合計時間：</string>
+    <string name="dispWorkTimePayoff">精算対象時間：</string>
+    <string name="dispEmail">e-mail</string>
+    <string name="dispPassword">password</string>
+    <string name="dispUserName">作業者氏名</string>
+    <string name="dispResiduePaidHolidays">有給休暇</string>
+    <string name="dispWorkingTime">所定就業時刻：</string>
+    <string name="dispScheduledWorkingHours">所定内時間：</string>
+    <string name="dispNonEpecified">（所定外）：</string>
+    <string name="editEmail">e-mail</string>
+    <string name="editPassword">password</string>
+    <string name="labelStartTime">開始時間</string>
+    <string name="labelEndTime">終了時間</string>
+</resources>
