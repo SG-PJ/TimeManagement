@@ -33,4 +33,8 @@
     <string name="editPassword">password</string>
     <string name="labelStartTime">開始時間</string>
     <string name="labelEndTime">終了時間</string>
+    <string name="dispStartTimeToday">出社時刻</string>
+    <string name="dispEndTimeToday">退社時刻</string>
+    <string name="checkResiduePaidHolidays">有給</string>
+    <string name="checkCompensatoryDayOff">代休</string>
 </resources>

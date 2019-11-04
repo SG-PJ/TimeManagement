@@ -76,38 +76,36 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="314dp"
+        android:layout_width="315dp"
         android:layout_height="18dp"
         android:layout_marginBottom="48dp"
-        android:layout_weight="3"
         android:orientation="horizontal"
-        android:background="@drawable/view_frame"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/dispUserName"
-            android:layout_width="wrap_content"
+            android:layout_width="11dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#8BC34A"
-            android:text="@string/dispUserName"
-            android:textColor="#FFFFFF" />
+            android:background="@drawable/view_frameandbackground"
+            android:textColor="#FFFFFF"
+            android:text="@string/dispUserName" />
 
         <TextView
             android:id="@+id/valueUserName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/view_frame"
             android:layout_weight="2" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="314dp"
+        android:layout_width="315dp"
         android:layout_height="18dp"
         android:layout_marginBottom="48dp"
-        android:layout_weight="3"
         android:orientation="horizontal"
         android:background="@drawable/view_frame"
         app:layout_constraintBottom_toTopOf="@+id/mainTextTable"
@@ -115,18 +113,19 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/dispResiduePaidHolidays"
-            android:layout_width="wrap_content"
+            android:id="@+id/dispUserNameToday"
+            android:layout_width="11dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#8BC34A"
-            android:text="@string/dispResiduePaidHolidays"
-            android:textColor="#FFFFFF" />
+            android:background="@drawable/view_frameandbackground"
+            android:textColor="#FFFFFF"
+            android:text="@string/dispResiduePaidHolidays" />
 
         <TextView
-            android:id="@+id/valueResiduePaidHolidays"
+            android:id="@+id/valueUserNameToday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/view_frame"
             android:layout_weight="2" />
     </LinearLayout>
 
@@ -134,7 +133,6 @@
         android:id="@+id/mainTextTable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_marginBottom="32dp"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"

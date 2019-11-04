@@ -3,9 +3,13 @@ package jp.vipsoft.timemanagement.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import java.util.*
 import kotlinx.android.synthetic.main.activity_calendar.*
+import android.widget.Button
+import android.widget.Toast
+
 
 class CalendarActivity : AppCompatActivity() {
 
@@ -39,7 +43,7 @@ class CalendarActivity : AppCompatActivity() {
 
         Viewcalendar.setOnDateChangeListener { view, year, month, dayOfMonth ->
             // カレンダーの選択日付をセット
-            val setDate = year.toString() + "/" + month + 1.toString() + "/" + dayOfMonth.toString()
+            val setDate = year.toString() + "/" + (month + 1).toString() + "/" + dayOfMonth.toString()
 
             // 作業時間（休日）
             val holidayTime = findViewById<TextView>(jp.vipsoft.timemanagement.R.id.workTimeHolidayValue)
