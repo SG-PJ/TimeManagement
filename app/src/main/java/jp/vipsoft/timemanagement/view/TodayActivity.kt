@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.TextView
 import java.util.*
 import jp.vipsoft.timemanagement.R
+import jp.vipsoft.timemanagement.util.FormatUtil
 import kotlinx.android.synthetic.main.activity_today.*
 
 
@@ -35,18 +36,12 @@ class TodayActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val timeZone = TimeZone.getTimeZone("Asia/Tokyo")
-        val cal = Calendar.getInstance(timeZone)
-        val year = cal.get(Calendar.YEAR)
-        val month = cal.get(Calendar.MONTH) + 1
-        val day = cal.get(Calendar.DATE)
-        val hour = cal.get(Calendar.HOUR_OF_DAY)
-        val min = cal.get(Calendar.MINUTE)
+        val format = FormatUtil()
 
         val date = findViewById<TextView>(R.id.txtTime)
-        date.text = "${year}/${month}/${day}"
+        date.text = format.getTiem()
 
         val time = findViewById<TextView>(R.id.txtDate)
-        time.text = "${hour}:${min}"
+        time.text = format.getDate()
     }
 }
