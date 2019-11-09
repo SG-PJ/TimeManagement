@@ -93,42 +93,6 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/dispWorkingTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:text="@string/dispStartTime" />
-
-            <TextView
-                android:id="@+id/startTimeValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/calTable_2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/dispScheduledWorkingHours"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:text="@string/dispEndTime" />
-
-            <TextView
-                android:id="@+id/endTimeValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/calTable_3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
                 android:id="@+id/dispWorkTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -154,7 +118,7 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/calTable_4"
+            android:id="@+id/calTable_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -164,6 +128,42 @@
                 android:layout_height="wrap_content"
                 android:gravity="end"
                 android:text="@string/dispWorkTimeHoliday" />
+
+            <TextView
+                android:id="@+id/endTimeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/calTable_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dispWorkTimeMidnight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/dispWorkTimeMidnight" />
+
+            <TextView
+                android:id="@+id/startTimeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/calTable_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dispWorkTimeTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/dispWorkTimeTotal" />
 
             <TextView
                 android:id="@+id/workTimeHolidayValue"

@@ -18,10 +18,10 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btnSignUp"
+        android:id="@+id/btnHome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/btnSignUp"
+        android:text="@string/btnHome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btnToDay"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -36,7 +36,7 @@
         android:text="@string/btnToDay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btnCalendar"
-        app:layout_constraintStart_toEndOf="@id/btnSignUp"
+        app:layout_constraintStart_toEndOf="@id/btnHome"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
