@@ -46,6 +46,63 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(baseContext, "signUp 失敗", Toast.LENGTH_SHORT).show()
                     }
                 }
+
+            /*
+            読み込みテスト START
+            val db = FirebaseFirestore.getInstance()
+            db.collection("user")
+                .get()
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        for (document in task.result!!) {
+                            Log.d("TAG", document.id + " => " + document.data)
+                        }
+                    } else {
+                        Log.w("loglog", "Error getting documents.", task.exception)
+                    }
+                }
+            読み込みテスト END
+            */
+
+            /*
+             書き込みテスト START
+            Log.d("TAG", "write click!!!!!!!!!!!!!! ")
+
+            val test = HashMap<String, Any>().apply {
+                put("specified_time", 1)
+                put("service_system_id", 2)
+                put("scheduled_working_to", 3)
+                put("scheduled_working_from", 4)
+                put("break_time_one", 5)
+                put("break_time_two", 6)
+                put("break_time_three", 7)
+                put("break_time_four", 8)
+                put("break_time_five", 9)
+            }
+
+            val db2 = FirebaseFirestore.getInstance()
+            db2.collection("user")
+                .add(test)
+                .addOnSuccessListener { documentReference ->
+                    Log.d("TAG", "DocumentSnapshot added with ID:" + documentReference.id)
+                    Toast.makeText(this, "登録しました。", Toast.LENGTH_LONG).show()
+                }
+                .addOnFailureListener {
+                        e -> Log.w("MainActivity", "Error adding document", e)
+                }
+            書き込みテスト END
+            */
+
+            /*
+            更新テスト START
+            val db3 = FirebaseFirestore.getInstance()
+            val ref = db3.collection("user").document("zPATBPCcIpUz5UZk2sQ5")
+            ref.update("specified_time", 11)
+                .addOnSuccessListener { Log.d("TAG", "DocumentSnapshot successfully updated!") }
+                .addOnFailureListener {e -> Log.e("TAG", "Error updating document", e)}
+            更新テスト END
+             */
+
         }
 
     }
